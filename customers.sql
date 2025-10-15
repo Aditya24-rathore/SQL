@@ -1,0 +1,12 @@
+use dummy;
+show tables;
+select * from customers where country="France";
+select * from customers where country="France" or "USA";
+select * from customers where country="France" and credtlimit>50000;
+select * from customers;
+select * from customers where country in("USA","France","India");
+select * from customers where country not  in("USA","France","India");
+select * from customers where country="France" order by customername;
+select * from customers where country="France" and creditlimit>50000 order by creditlimit;
+select * from customers order by creditlimit desc limit 5;
+select * from customers order by creditlimit desc limit 1 offset 2;
